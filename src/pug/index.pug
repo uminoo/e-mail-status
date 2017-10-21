@@ -1,0 +1,34 @@
+include ./mixins/mixins.pug
+
+doctype html
+
+html
+
+    include ./includes/head.pug
+
+    body
+      div.e-mail-status
+        table.e-mail-status__block(width="100")
+          tr
+            td.e-mail-status__header
+              table(width="100").e-mail-status__top
+                tbody.e-mail-status__tbody
+                  tr.e-mail-status__tr
+                    td.e-mail-status__left
+                      a(href="")
+                        img(src="http://static.beeline.ru/upload/images/e-shop/e-mail/logo@2x.png", alt="", width="160", height="44")
+                    td.e-mail-status__right Единая площадка для компаний,<br>участвующих в тендерах
+          tr
+            td.e-mail-status__content
+              div.e-mail-status__icon-wrap
+                img.e-mail-status__icon(src="http://static.beeline.ru/upload/images/e-shop/e-mail/ico-done@2x.png", alt="", width="106", height="106")
+              div.e-mail-status__head Заявка № 2344631 одобрена!
+              div.e-mail-status__message Здесь пишем краткую информацию о статусе заявки,<br>что нужно сделать и так далее.
+              div.e-mail-status__button-wr
+                a(href="#").e-mail-status__button-link
+                  img.e-mail-status__button(src="http://static.beeline.ru/upload/images/e-shop/e-mail/button@2x.jpg", alt="", width="262", height="50")
+          tr
+            td.e-mail-status__footer
+              div.e-mail-status__bottom-message Если у вас возникли вопросы, пишите на <a href="mailto:info@tenderhub.ru" class="e-mail-status__bottom-link">info@tenderhub.ru</a><br>или звоните по телефону 8 (800) 550-53-11
+              div.e-mail-status__bottom-message
+                a.e-mail-status__bottom-link(href="#") Отписаться от рассылки
